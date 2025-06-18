@@ -37,7 +37,7 @@ def update(frame):
             parts = line.split(',')
             if len(parts) == 6:
                 t, ax, ay, az, temp, hum = map(float, parts)
-                t /= 1000.0  # Convert millis to seconds
+                t /= 1000.0 
                 t_vals.append(t)
                 ax_vals.append(ax)
                 ay_vals.append(ay)
@@ -80,7 +80,7 @@ def update(frame):
 
 ani = animation.FuncAnimation(fig, update, interval=100)
 
-print(f"📊 Collecting live data for {DURATION} seconds... (close window to interrupt)")
+print(f"Collecting live data for {DURATION} seconds... (close window to interrupt)")
 plt.tight_layout()
 plt.show(block=False)
 
