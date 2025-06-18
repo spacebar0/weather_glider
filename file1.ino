@@ -9,7 +9,7 @@ const char* password = "12345678";
 
 // DHT Sensor settings
 #define DHTPIN 4         // GPIO4 (change if needed)
-#define DHTTYPE DHT22    // or DHT22
+#define DHTTYPE DHT22   
 DHT dht(DHTPIN, DHTTYPE);
 
 WiFiServer server(80);
